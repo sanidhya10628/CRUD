@@ -30,18 +30,14 @@ app.get('/', (req, res) => {
 
 app.get('/students', async (req, res) => {
     const profiles = await Profile.find({});
-    //console.log(profiles);
     res.render('students', { profiles });
 })
 
 app.get('/students/:id', async (req, res) => {
     const { id } = req.params;
     const profile = await Profile.findById(id);
-    //console.log(profile)
     res.render('display/send', { profile });
 })
-
-
 
 
 app.get('/add', (req, res) => {
@@ -56,10 +52,8 @@ app.post('/add', async (req, res) => {
 })
 
 app.get('/students/:id/update', async (req, res) => {
-    // console.log(req.params);
     const { id } = req.params;
     const profile = await Profile.findById(id);
-    // console.log(profile);
     res.render('Methods/update', { profile });
 })
 
@@ -70,17 +64,13 @@ app.put('/students/:id', async (req, res) => {
     res.redirect(`/students/${profile._id}`)
 })
 
-
-
-
-
-app.get('/delete', (req, res) => {
-    res.render('Methods/delete');
+app.delete('/students/:id', async (req, res) => {
+    const { id } = req.params;
+    const deleteProfile = await Profile.findByIdAndDelete(id);
+    res.redirect('/students')
 })
 
-app.get('/find', (req, res) => {
-    res.render('Methods/find');
-})
+
 
 app.listen(8000, () => {
     console.log("ON PORT: 8000")

@@ -28,8 +28,9 @@
 
     <a href="/students/<%= profile._id %>/update">Update Profile</a>
     <br>
-    <a href="/delete">Remove Account</a>
-    <br>
+    <form action="/students/<%= profile._id %>?_method=DELETE" method="POST">
+        <button type="submit">Remove Account</button>
+    </form>
     <a href="/students">Back to List of Students</a>
     <br>
     <a href="/">Back to Home Page</a>
