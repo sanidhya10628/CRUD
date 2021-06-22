@@ -1,0 +1,36 @@
+body{
+    /* background-color: yellow; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 30px;
+    font-size: 40px;
+}
+form{
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-input{
+    margin: 3px 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color: rgb(109, 241, 20);
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

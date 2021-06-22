@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of all Student</title>
+    <link rel="stylesheet" href="students.css">
 </head>
 
 <body>
     <h1>Here is the list of all Students!.....</h1>
-    <ul>
-        <% for(let profile of profiles){ %>
-            <li>
-                <a href="/students/<%= profile._id %>">
-                    <%= profile.name %>
-                </a>
-            </li>
-            <% } %>
-    </ul>
-    <a href="/">Back to Home Page</a>
+    <div class="list">
+        <ul>
+            <% for(let profile of profiles){ %>
+                <li>
+                    <a href="/students/<%= profile._id %>">
+                        <%= profile.name %>
+                    </a>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+    <a href="/" id="back">Back to Home Page</a>
 </body>
 
 </html>

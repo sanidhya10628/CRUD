@@ -1,19 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(209, 198, 198);
+    background-color: rgb(241, 234, 234);
 }
 
 h1{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
 }
 .crud{
     margin: 10px;
 }
 a{
+    margin: 5px 15px;
     text-decoration: none;
     color: black;
     display: block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
 }

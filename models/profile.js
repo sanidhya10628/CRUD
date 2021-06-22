@@ -36,18 +36,3 @@ const profileSchema = mongoose.Schema({
 const Profile = mongoose.model('Profile', profileSchema);
 
 module.exports = Profile;
-// name: 'Sanidhya Mahajan', age: '19', gender: 'male', branch: 'CSE', desc: 'cse student'
-// name: {
-//     type: String,
-//         required: true
-// },
-// price: {
-//     type: Number,
-//         required: true,
-//             min: 0
-// },
-// category: {
-//     type: String,
-//         lowercase: true,
-//         enum: ['fruit', 'vegetable', 'dairy']
-// }

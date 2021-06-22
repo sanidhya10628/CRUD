@@ -1,0 +1,25 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.list{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin: 20px;
+    text-align: left;
+}
+ul{
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#back{
+    margin: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
