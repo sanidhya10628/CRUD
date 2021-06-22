@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= profile.name %>
+    </title>
+</head>
+
+<body>
+    <h1>Welcome <%= profile.name %> !</h1>
+    <h3>Profile Details</h3>
+    <div class="details">
+        <p>Name : <%= profile.name %>
+        </p>
+        <p>Age : <%= profile.age %>
+        </p>
+        <p>Gender : <%= profile.gender %>
+        </p>
+        <p>Branch : <%= profile.branch %>
+        </p>
+        <p>Description : <%= profile.desc %>
+        </p>
+    </div>
+
+    <a href="/students/<%= profile._id %>/update">Update Profile</a>
+    <br>
+    <a href="/delete">Remove Account</a>
+    <br>
+    <a href="/students">Back to List of Students</a>
+    <br>
+    <a href="/">Back to Home Page</a>
+</body>
+
+</html>
